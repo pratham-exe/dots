@@ -1,0 +1,30 @@
+set selection-clipboard clipboard
+set recolor true
+
+# One dark
+map <F1> focus_inputbar ":set recolor-lightcolor \#3e4452"
+map <F2> focus_inputbar ":set recolor-darkcolor \#abb2bf"
+map ! feedkeys "<F1><Return><F2><Return>"
+
+# Catppuccin
+map <F3> focus_inputbar ":set recolor-lightcolor \#1c1d2d"
+map <F4> focus_inputbar ":set recolor-darkcolor \#c3bac6"
+map @ feedkeys "<F3><Return><F4><Return>"
+
+# Gruvbox
+map <F5> focus_inputbar ":set recolor-lightcolor \#282828"
+map <F6> focus_inputbar ":set recolor-darkcolor \#bdae93"
+map $ feedkeys "<F5><Return><F6><Return>"
+
+# Solarized
+map <F7> focus_inputbar ":set recolor-lightcolor \#073642"
+map <F8> focus_inputbar ":set recolor-darkcolor \#93a1a1"
+map % feedkeys "<F7><Return><F8><Return>"
+
+map <F9> focus_inputbar ":set recolor-lightcolor \#ffffff"
+map <F10> focus_inputbar ":set recolor-darkcolor \#000000"
+map ^ feedkeys "<F9><Return><F10><Return>"
+
+map <F11> focus_inputbar ":set recolor-lightcolor \#000000"
+map <F12> focus_inputbar ":set recolor-darkcolor \#ffffff"
+map & feedkeys "<F11><Return><F12><Return>"
