@@ -3,7 +3,7 @@
   border-radius: 0;
   min-height: 0;
   font-family: IosevkaTermSlab NFM Bold;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 window#waybar {
@@ -39,13 +39,16 @@ window#waybar.hidden {
   text-shadow: inherit;
 }
 
-#network,
-#bluetooth,
+#tray,
 #clock {
   margin: 6px 3px;
   padding: 6px 9px;
   background-color: #010005;
   color: #ffffff;
+}
+
+#tray {
+  padding-left: 3px;
 }
 
 #pulseaudio,

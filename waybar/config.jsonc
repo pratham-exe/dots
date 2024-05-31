@@ -5,8 +5,7 @@
     "modules-left": [
         "custom/archlogo",
         "custom/spotify",
-        "network",
-        "bluetooth"
+        "tray"
     ],
     "modules-center": [
         "hyprland/workspaces"
@@ -31,6 +30,10 @@
             "2": [],
             "3": []
         }
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
     },
     "clock": {
         "format": "{:%H:%M}",
@@ -77,17 +80,6 @@
             "critical": 10
         }
     },
-    "network": {
-        "format-wifi" : "{icon}",
-        "format-icons": "",
-        "format-ethernet": "",
-        "format-disconnected": "",
-        "tooltip-format-wifi": "{essid}",
-        "tooltip-format-ethernet": "{ifname}",
-        "tooltip-format-disconnected": "Disconnected",
-        "interval": 5,
-        "nospacing": 1
-    },
     "pulseaudio": {
         "format": "{icon}",
         "nospacing": 1,
@@ -99,12 +91,6 @@
             "car": "",
             "default": ["󰖀","󰕾",""]
         }
-    },
-    "bluetooth": {
-        "format": "{icon}",
-        "format-icons": "",
-        "tooltip-format": "Bluetooth : {status}",
-        "tooltip-format-connected": "{device_alias}"
     },
     "custom/spotify": {
         "format": "{icon}",
