@@ -104,7 +104,8 @@
     "bluetooth": {
         "format": "{icon}",
         "format-icons": "",
-        "tooltip-format": "Bluetooth : {status}"
+        "tooltip-format": "Bluetooth : {status}",
+        "tooltip-format-connected": "{device_alias}"
     },
     "custom/spotify": {
         "format": "{icon}",
