@@ -23,19 +23,18 @@
         "on-click": "activate",
         "format": "{icon}",
         "format-icons": {
-            "default": "",
-            "active": "󱓻"
+            "default": "",
+            "active": ""
         },
         "persistent-workspaces": {
             "1": [],
             "2": [],
-            "3": [],
-            "4": []
+            "3": []
         }
     },
     "clock": {
-        "format": "   {:%I:%M %p}",
-        "tooltip-format": "   {:%a, %d %b %Y}"
+        "format": "{:%H:%M}",
+        "tooltip-format": "{:%a, %d %b %Y}"
     },
     "backlight": {
         "format": "{icon}",
@@ -110,7 +109,8 @@
     "custom/spotify": {
         "format": "{icon}",
         "format-icons": "",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "spotify"
     },
     "custom/archlogo": {
         "format": "{icon}",
@@ -122,6 +122,6 @@
         "format": "{icon}",
         "format-icons": "⏻",
         "tooltip": false,
-        "on-click": "~/.config/rofi/scripts/powermenu_t6"
+        "on-click": "wlogout"
     }
 }

@@ -83,6 +83,7 @@ window#waybar.hidden {
   font-family: IosevkaTermSlab NFM Bold;
   color: white;
   font-size: 14px;
+  padding-left: 0;
 }
 
 tooltip {
