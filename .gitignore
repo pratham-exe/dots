@@ -6,3 +6,5 @@ rofi/
 session/
 spotify/
 systemd/
+google-chrome/
+chrome-flags.conf
