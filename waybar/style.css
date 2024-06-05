@@ -69,7 +69,7 @@ window#waybar.hidden {
 #battery.warning,
 #battery.critical,
 #battery.urgent {
-  background-color: #ff0048;
+  background-color: #010005;
   color: #181825;
   animation-name: blink;
   animation-duration: 0.5s;
@@ -79,7 +79,7 @@ window#waybar.hidden {
 }
 
 #battery.charging {
-  background-color: #a6e3a1;
+  background-color: #010005;
 }
 
 #clock {
