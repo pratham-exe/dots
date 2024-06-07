@@ -28,6 +28,9 @@ truncation_symbol = "…/"
 "Music" = " "
 "Pictures" = " "
 
+[character]
+success_symbol = '[──>](bold green)'
+
 [git_branch]
 symbol = ""
 style = "bg:#394260"
