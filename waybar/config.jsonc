@@ -3,10 +3,20 @@
     "height": 30,
     "spacing": 4,
     "modules-left": [
-        "custom/archlogo",
-        "custom/spotify",
-        "tray"
+        "group/connections",
+        "clock"
     ],
+    "group/connections": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 800,
+            "transition-left-to-right": true
+        },
+        "modules": [
+            "custom/archlogo",
+            "tray"
+        ]
+    },
     "modules-center": [
         "hyprland/workspaces"
     ],
@@ -14,9 +24,22 @@
         "pulseaudio",
         "backlight",
         "battery",
-        "clock",
-        "custom/power"
+        "group/powerbutton"
     ],
+    "group/powerbutton": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 800,
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/power",
+            "custom/lock",
+            "custom/logout",
+            "custom/suspend",
+            "custom/reboot"
+        ]
+    },
     // Modules configuration
     "hyprland/workspaces": {
         "on-click": "activate",
@@ -36,8 +59,8 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:%H:%M}",
-        "tooltip-format": "{:%a, %d %b %Y}"
+        "format": "{:%H:%M}  ",
+        "tooltip-format": "{:%a, %d %b %Y}  "
     },
     "backlight": {
         "format": "{icon}",
@@ -46,34 +69,10 @@
     },
     "battery": {
         "format": "{icon}",
-        "format-icons": {
-            "charging": [
-                "󰢜",
-                "󰂆",
-                "󰂇",
-                "󰂈",
-                "󰢝",
-                "󰂉",
-                "󰢞",
-                "󰂊",
-                "󰂋",
-                "󰂅"
-            ],
-            "default": [
-                "󰁺",
-                "󰁻",
-                "󰁼",
-                "󰁽",
-                "󰁾",
-                "󰁿",
-                "󰂀",
-                "󰂁",
-                "󰂂",
-                "󰁹"
-            ]
-        },
+        "format-charging": " {icon}",
+        "format-icons": [" ", " ", " ", " "],
         "tooltip-format": "Battery : {capacity}%",
-        "format-full": "Charged ",
+        "format-full": " ",
         "interval": 5,
         "states": {
             "warning": 20,
@@ -92,22 +91,35 @@
             "default": ["󰖀","󰕾",""]
         }
     },
-    "custom/spotify": {
-        "format": "{icon}",
-        "format-icons": "",
-        "tooltip": false,
-        "on-click": "spotify"
-    },
     "custom/archlogo": {
         "format": "{icon}",
-        "format-icons": "",
-        "tooltip": false,
-        "on-click": "~/.config/rofi/scripts/launcher_t6"
+        "format-icons": "󰣇",
+        "tooltip": false
     },
     "custom/power": {
         "format": "{icon}",
         "format-icons": "⏻",
         "tooltip": false,
-        "on-click": "wlogout"
+        "on-click": "shutdown now"
+    },
+    "custom/lock": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "hyprlock"
+    },
+    "custom/logout": {
+        "format": "󰍃",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch exit"
+    },
+    "custom/suspend": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "bash ~/.config/scripts/suspend_with_lock.sh"
+    },
+    "custom/reboot": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "reboot"
     }
 }

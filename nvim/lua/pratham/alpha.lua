@@ -25,8 +25,7 @@ dashboard.section.header.val = {
 
 -- Set menu
 dashboard.section.buttons.val = {
-    dashboard.button( "n", "  New file" , ":ene <BAR> startinsert <CR>"),
-    dashboard.button( "f", "  Find file", ":Telescope find_files<CR>"),
+    dashboard.button( "l", "  LeetCode", ":Leet <CR>"),
     dashboard.button( "o", "  Browse file", ":Oil<CR>"),
     dashboard.button( "q", "󰗼  Quit NVIM", ":qa<CR>"),
 }
