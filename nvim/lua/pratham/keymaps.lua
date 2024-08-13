@@ -75,3 +75,10 @@ keymap("n","<leader>e",":Neotree toggle<cr>",opts)
 
 -- oil.nvim 
 keymap("n","<leader>o",":Oil<cr>",opts)
+
+-- FineCmdline
+keymap("n", ":", "<cmd>FineCmdline<CR>", opts)
+
+-- Search Box
+keymap("n", "<leader>s", ":SearchBoxMatchAll<CR>", opts)
+keymap("n", "<leader>r", ":SearchBoxReplace<CR>", opts)

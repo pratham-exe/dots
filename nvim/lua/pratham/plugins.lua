@@ -247,6 +247,7 @@ require('lazy').setup({
     { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
     { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
   },
+  -- Leetcode plugin
   {
       "kawre/leetcode.nvim",
       build = ":TSUpdate html",
@@ -263,6 +264,11 @@ require('lazy').setup({
       opts = {
           -- configuration goes here
       },
+  },
+  {
+      'MunifTanjim/nui.nvim',
+      'VonHeikemen/fine-cmdline.nvim',
+      'VonHeikemen/searchbox.nvim'
   },
 }
 }, {})
