@@ -1,7 +1,10 @@
 {
     "layer": "top",
     "height": 30,
-    "spacing": 4,
+    "spacing": 0,
+    "margin-top": 7,
+    "margin-left": 7,
+    "margin-right": 7,
     "modules-left": [
         "group/connections",
         "clock"
@@ -45,13 +48,20 @@
         "on-click": "activate",
         "format": "{icon}",
         "format-icons": {
-            "default": "",
-            "active": ""
+            "1": "Ⲁ",
+            "2": "Ⲃ",
+            "3": "Ⲅ",
+            "4": "Ⲇ",
+            "5": "Ⲉ",
+            "6": "Ⲋ",
+            "7": "Ⲍ",
+            "8": "Ⲏ",
+            "9": "Ⲑ",
+            "10": "Ⲓ"
         },
         "persistent-workspaces": {
             "1": [],
-            "2": [],
-            "3": []
+            "2": []
         }
     },
     "tray": {

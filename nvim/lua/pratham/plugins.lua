@@ -53,7 +53,25 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
+    keys = {
+      {
+        "<leader>?",
+        function()
+          require("which-key").show({ global = false })
+        end,
+        desc = "Buffer Local Keymaps (which-key)",
+      },
+    },
+  },
+  { 'echasnovski/mini.nvim', version = false },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -257,9 +275,7 @@ require('lazy').setup({
           "MunifTanjim/nui.nvim",
 
           -- optional
-          "nvim-treesitter/nvim-treesitter",
           "rcarriga/nvim-notify",
-          "nvim-tree/nvim-web-devicons",
       },
       opts = {
           -- configuration goes here
