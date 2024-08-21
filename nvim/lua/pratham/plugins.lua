@@ -286,6 +286,12 @@ require('lazy').setup({
       'VonHeikemen/fine-cmdline.nvim',
       'VonHeikemen/searchbox.nvim'
   },
+  {
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
+    config = true,
+    opts = ...
+  },
 }
 }, {})
 

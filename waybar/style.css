@@ -42,12 +42,12 @@ window#waybar.hidden {
   min-width: 0;
   box-shadow: inset 0 -3px transparent;
   margin: 6px 3px;
-  color: #D2D2D2;
+  color: #3F3F3F;
   padding: 0 5px;
 }
 
 #workspaces button.active {
-  color: #3F3F3F;
+  color: #D2D2D2;
 }
 
 #workspaces button:hover {
