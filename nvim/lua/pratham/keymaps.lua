@@ -82,3 +82,8 @@ keymap("n", ":", "<cmd>FineCmdline<CR>", opts)
 -- Search Box
 keymap("n", "<leader>s", ":SearchBoxMatchAll<CR>", opts)
 keymap("n", "<leader>r", ":SearchBoxReplace<CR>", opts)
+
+-- Bufferline
+keymap("n", "<leader>q", ":bdelete<CR>", opts)
+keymap("n", "<S-h>", ":bprev<CR>", opts)
+keymap("n", "<S-l>", ":bnext<CR>", opts)

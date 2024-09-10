@@ -5,6 +5,6 @@ background_opacity 0.9
 
 
 # BEGIN_KITTY_THEME
-# 3024 Night
+# Kanagawa_dragon
 include current-theme.conf
 # END_KITTY_THEME

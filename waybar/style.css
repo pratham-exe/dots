@@ -16,19 +16,19 @@ window#waybar.hidden {
 }
 
 .modules-left {
-  background-color: #888C8D;
+  background-color: #83A5C0;
   border-radius: 5px;
   padding: 0px 5px;
 }
 
 .modules-center {
-  background-color: #888C8D;
+  background-color: #83A5C0;
   border-radius: 5px;
   padding: 0px 5px;
 }
 
 .modules-right {
-  background-color: #888C8D;
+  background-color: #83A5C0;
   border-radius: 5px;
   padding: 0px 5px;
 }
@@ -42,12 +42,12 @@ window#waybar.hidden {
   min-width: 0;
   box-shadow: inset 0 -3px transparent;
   margin: 6px 3px;
-  color: #3F3F3F;
+  color: #4C516D;
   padding: 0 5px;
 }
 
 #workspaces button.active {
-  color: #D2D2D2;
+  color: white;
 }
 
 #workspaces button:hover {
@@ -58,7 +58,6 @@ window#waybar.hidden {
 #tray,
 #clock {
   margin: 6px 3px;
-  color: #D2D2D2;
   padding: 0 5px;
 }
 
@@ -70,24 +69,25 @@ window#waybar.hidden {
 #backlight,
 #battery {
   margin: 6px 3px;
-  color: #D2D2D2;
+  color: #4C516D;
   padding: 0 5px;
 }
 
 #battery {
   padding-right: 0;
+  font-size: 12px;
 }
 
 @keyframes blink {
   to {
-    color: #3F3F3F;
+    color: #4C516D;
   }
 }
 
 #battery.warning,
 #battery.critical,
 #battery.urgent {
-  color: #D2D2D2;
+  color: #4C516D;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -97,14 +97,14 @@ window#waybar.hidden {
 
 #clock {
   font-family: JetBrainsMono NF;
-  color: #D2D2D2;
+  color: #4C516D;
   font-size: 12px;
   padding-right: 10px;
 }
 
 tooltip {
   border-radius: 5px;
-  background-color: #3F3F3F;
+  background-color: #2E3440;
 }
 
 tooltip label {
@@ -112,7 +112,7 @@ tooltip label {
 }
 
 #custom-archlogo {
-  color: #3F3F3F;
+  color: #4C516D;
   padding: 0 5px;
 }
 
@@ -122,7 +122,7 @@ tooltip label {
 #custom-suspend,
 #custom-reboot {
   margin: 6px 3px;
-  color: #3F3F3F;
+  color: #4C516D;
   padding: 0 5px;
 }
 

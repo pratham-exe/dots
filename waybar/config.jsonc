@@ -70,7 +70,8 @@
     },
     "clock": {
         "format": "{:%H:%M}  ",
-        "tooltip-format": "{:%a, %d %b %Y}  "
+        "format-alt": "{:%a, %d %b %Y}  ",
+        "tooltip": false
     },
     "backlight": {
         "format": "{icon}",
@@ -78,10 +79,10 @@
         "tooltip-format": "Brightness : {percent}%"
     },
     "battery": {
-        "format": "{icon}",
-        "format-charging": " {icon}",
+        "format": "{icon}   {capacity}%",
+        "format-charging": " {icon}   {capacity}%",
         "format-icons": [" ", " ", " ", " "],
-        "tooltip-format": "Battery : {capacity}%",
+        "tooltip": false,
         "format-full": " ",
         "interval": 5,
         "states": {
@@ -95,7 +96,8 @@
         "tooltip-format": "Volume : {volume}%",
         "format-muted": "󰝟",
         "format-icons": {
-            "headphone": "",
+            "headphone": "",
+            "headset": "",
             "phone": "",
             "car": "",
             "default": ["󰖀","󰕾",""]

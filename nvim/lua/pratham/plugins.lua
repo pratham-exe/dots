@@ -21,18 +21,16 @@ require('lazy').setup({
   'tpope/vim-sleuth',
 
   {
-    -- LSP Configuration & Plugins
-    'neovim/nvim-lspconfig',
-    dependencies = {
-      -- Automatically install LSPs to stdpath for neovim
-      { 'williamboman/mason.nvim', config = true },
-      'williamboman/mason-lspconfig.nvim',
-
-      { 'j-hui/fidget.nvim', opts = {} },
-
-      -- Additional lua configuration, makes nvim stuff amazing!
-      'folke/neodev.nvim',
-    },
+     -- LSP Configuration & Plugins
+     'neovim/nvim-lspconfig',
+     dependencies = {
+       -- Automatically install LSPs to stdpath for neovim
+       { 'williamboman/mason.nvim', config = true },
+       'williamboman/mason-lspconfig.nvim',
+       { 'j-hui/fidget.nvim', opts = {} },
+       -- Additional lua configuration, makes nvim stuff amazing!
+       'folke/neodev.nvim',
+     },
   },
 
   {
@@ -71,7 +69,7 @@ require('lazy').setup({
       },
     },
   },
-  { 'echasnovski/mini.nvim', version = false },
+  -- { 'echasnovski/mini.nvim', version = false },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -291,6 +289,12 @@ require('lazy').setup({
     priority = 1000,
     config = true,
     opts = ...
+  },
+  {
+    'shaunsingh/nord.nvim'
+  },
+  {
+    'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'
   },
 }
 }, {})
