@@ -20,3 +20,7 @@ autocmd("FileType", { pattern = "javascript",
 	callback = function()
 		vim.api.nvim_buf_set_keymap(0,"n","<C-c>",":vsplit<CR>:te node '%' <CR>i",opts)
 	end})
+autocmd("FileType", { pattern = "go",
+	callback = function()
+		vim.api.nvim_buf_set_keymap(0,"n","<C-c>",":vsplit<CR>:te go run . <CR>i",opts)
+	end})

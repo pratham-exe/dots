@@ -296,6 +296,15 @@ require('lazy').setup({
   {
     'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'
   },
+  {
+    'numToStr/FTerm.nvim'
+  },
+  {
+    'makerj/vim-pdf'
+  },
+  {
+    'edluffy/hologram.nvim'
+  },
 }
 }, {})
 

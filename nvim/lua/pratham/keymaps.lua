@@ -87,3 +87,7 @@ keymap("n", "<leader>r", ":SearchBoxReplace<CR>", opts)
 keymap("n", "<leader>q", ":bdelete<CR>", opts)
 keymap("n", "<S-h>", ":bprev<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
+
+-- FTerm
+-- keymap("n", "<C-i>", "<CMD>lua require('FTerm').toggle()<CR>", opts)
+-- keymap("t", "<C-i>", "<CMD>lua require('FTerm').toggle()<CR>", opts)
