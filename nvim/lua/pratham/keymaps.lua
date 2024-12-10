@@ -71,13 +71,13 @@ keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>t", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Neotree 
-keymap("n","<leader>e",":Neotree toggle<cr>",opts)
+-- keymap("n","<leader>e",":Neotree toggle<cr>",opts)
 
 -- oil.nvim 
 keymap("n","<leader>o",":Oil<cr>",opts)
 
 -- FineCmdline
-keymap("n", ":", "<cmd>FineCmdline<CR>", opts)
+-- keymap("n", ":", "<cmd>FineCmdline<CR>", opts)
 
 -- Search Box
 keymap("n", "<leader>s", ":SearchBoxMatchAll<CR>", opts)
@@ -89,5 +89,5 @@ keymap("n", "<S-h>", ":bprev<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 
 -- FTerm
--- keymap("n", "<C-i>", "<CMD>lua require('FTerm').toggle()<CR>", opts)
--- keymap("t", "<C-i>", "<CMD>lua require('FTerm').toggle()<CR>", opts)
+-- keymap("n", "<leader>i", "<CMD>lua require('FTerm').toggle()<CR>", opts)
+-- keymap("t", "<leader>i", "<CMD>lua require('FTerm').toggle()<CR>", opts)
