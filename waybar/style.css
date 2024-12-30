@@ -73,6 +73,7 @@ window#waybar.hidden {
   padding: 0 5px;
 }
 
+#pulseaudio,
 #battery {
   padding-right: 0;
   font-size: 12px;

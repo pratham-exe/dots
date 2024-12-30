@@ -6,7 +6,7 @@
     follow = mouse
     # Set {width}x{height} and {x_pos}+{y_pos}
     width = 300
-    height = 300
+    height = 100
     origin = top-center
     # Show number of hidden notifications
     indicate_hidden = yes

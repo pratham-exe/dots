@@ -69,7 +69,7 @@ require('lazy').setup({
       },
     },
   },
-  -- { 'echasnovski/mini.nvim', version = false },
+  { 'echasnovski/mini.nvim', version = false },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -344,7 +344,6 @@ require('lazy').setup({
         },
       },
       indent = { enabled = true },
-      input = { enabled = true },
       notifier = { enabled = true },
       quickfile = { enabled = true },
       scroll = { enabled = true },

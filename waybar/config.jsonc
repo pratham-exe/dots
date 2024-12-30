@@ -91,9 +91,10 @@
         }
     },
     "pulseaudio": {
-        "format": "{icon}",
+        "format": "{icon}   {volume}%",
+        "format-bluetooth": "{icon}  {volume}%",
         "nospacing": 1,
-        "tooltip-format": "Volume : {volume}%",
+        "tooltip": false,
         "format-muted": "󰝟",
         "format-icons": {
             "headphone": "",
