@@ -47,12 +47,17 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-  color: white;
+  background: #5E81AC;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #workspaces button:hover {
-  box-shadow: inherit;
-  text-shadow: inherit;
+  background: #6c819b;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #tray,

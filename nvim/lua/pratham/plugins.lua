@@ -249,6 +249,7 @@ require('lazy').setup({
   },
   {
   "christoomey/vim-tmux-navigator",
+  lazy = false,
   cmd = {
     "TmuxNavigateLeft",
     "TmuxNavigateDown",

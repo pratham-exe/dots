@@ -95,7 +95,7 @@
         "format-bluetooth": "{icon} {volume}%",
         "nospacing": 1,
         "tooltip": false,
-        "format-muted": "󰝟",
+        "format-muted": "󰝟 {volume}%",
         "format-icons": {
             "headphone": "",
             "headset": "",
