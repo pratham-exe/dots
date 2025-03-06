@@ -1,5 +1,5 @@
 [global]
-   
+
     ### Display ###
 
     # Display notifications on monitor with mouse focus
@@ -14,12 +14,12 @@
     shrink = no
     # Set transparency of notifications
     transparency = 0
-    # Height of whole notification    
+    # Height of whole notification
     notification_height = 0
     # Height of seperators
     separator_height = 2
     # Text and seperator padding
-    padding = 8
+    padding = 15
     # Horizontal padding
     horizontal_padding = 8
     # Width of frame around window
@@ -32,10 +32,10 @@
     idle_threshold = 0
 
     ### Text ###
-    
+
     # Set font of notifications
-    font = IosevkaTermSlab NFM 10
-    # Spacing between lines 
+    font = JetBrainsMono NF 10
+    # Spacing between lines
     line-height = 0
     # Markup parsing
     markup = full
@@ -67,19 +67,19 @@
     hide_duplicate_count = true
     # Show indicatiors  for urls and actions
     show_indicators = no
-   
+
     ### Icons ###
-    
+
     # Disable icons
     icon_position = off
 
     ### History ###
-    
+
     # Length of history
     history_length = 20
-    
+
     ### Misc ###
-    
+
     # Dmenu path
     dmenu = /usr/bin/dmenu -p dunst:
     # Browser

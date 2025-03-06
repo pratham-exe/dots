@@ -24,8 +24,9 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
-        "pulseaudio",
-        "backlight",
+        "mpris",
+        "group/sound",
+        "group/brightness",
         "battery",
         "group/powerbutton"
     ],
@@ -43,22 +44,33 @@
             "custom/reboot"
         ]
     },
+    "group/sound": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 800,
+            "transition-left-to-right": true
+        },
+        "modules": [
+            "pulseaudio",
+            "pulseaudio/slider"
+        ]
+    },
+    "group/brightness": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 800,
+            "transition-left-to-right": true
+        },
+        "modules": [
+            "backlight",
+            "backlight/slider"
+        ]
+    },
+
     // Modules configuration
     "hyprland/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
-        "format-icons": {
-            "1": "Ⲁ",
-            "2": "Ⲃ",
-            "3": "Ⲅ",
-            "4": "Ⲇ",
-            "5": "Ⲉ",
-            "6": "Ⲋ",
-            "7": "Ⲍ",
-            "8": "Ⲏ",
-            "9": "Ⲑ",
-            "10": "Ⲓ"
-        },
         "persistent-workspaces": {
             "1": [],
             "2": []
@@ -134,5 +146,27 @@
         "format": "",
         "tooltip": false,
         "on-click": "reboot"
+    },
+    "backlight/slider": {
+        "min": 20,
+        "max": 100,
+        "rotate": 0,
+        "device": "intel_backlight",
+        "scroll-step": 1
+    },
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "rotate": 0,
+        "device": "pulseaudio",
+        "scroll-step": 1
+    },
+    "mpris": {
+        "format": "  {dynamic}",
+        "format-paused": "  {dynamic}",
+        "dynamic-len": 40,
+        "dynamic-separator": " | ",
+        "dynamic-order": ["title", "artist"],
+        "ignored-players": ["firefox"]
     }
 }

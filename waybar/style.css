@@ -135,3 +135,40 @@ tooltip label {
 #custom-power {
   padding-right: 8px;
 }
+
+#backlight-slider slider,
+#pulseaudio-slider slider {
+  background: #4C516D;
+  background-color: transparent;
+  box-shadow: none;
+  margin-right: 7px;
+}
+
+#backlight-slider trough,
+#pulseaudio-slider trough {
+  margin-top: -3px;
+  min-width: 60px;
+  min-height: 10px;
+  margin-bottom: -4px;
+  border-radius: 3px;
+  background: #4C516D;
+}
+
+
+#backlight-slider trough {
+  min-width: 30px;
+}
+
+#backlight-slider highlight,
+#pulseaudio-slider highlight {
+  border-radius: 3px;
+  background-color: #8FBCBB;
+}
+
+#mpris {
+  background-color: #5E81AC;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 1px 10px;
+  color: #4C516D;
+}
