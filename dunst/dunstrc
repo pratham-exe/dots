@@ -25,7 +25,7 @@
     # Width of frame around window
     frame_width = 1
     # Color of frame around window
-    frame_color = "#3F3F3F"
+    frame_color = "#494949"
     # Sort messages by urgency
     sort = yes
     # Idle seconds

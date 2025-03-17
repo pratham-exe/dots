@@ -25,8 +25,8 @@
     ],
     "modules-right": [
         "mpris",
-        "group/sound",
-        "group/brightness",
+        "pulseaudio",
+        "backlight",
         "battery",
         "group/powerbutton"
     ],
@@ -42,28 +42,6 @@
             "custom/logout",
             "custom/suspend",
             "custom/reboot"
-        ]
-    },
-    "group/sound": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 800,
-            "transition-left-to-right": true
-        },
-        "modules": [
-            "pulseaudio",
-            "pulseaudio/slider"
-        ]
-    },
-    "group/brightness": {
-        "orientation": "horizontal",
-        "drawer": {
-            "transition-duration": 800,
-            "transition-left-to-right": true
-        },
-        "modules": [
-            "backlight",
-            "backlight/slider"
         ]
     },
 
@@ -146,20 +124,6 @@
         "format": "",
         "tooltip": false,
         "on-click": "reboot"
-    },
-    "backlight/slider": {
-        "min": 20,
-        "max": 100,
-        "rotate": 0,
-        "device": "intel_backlight",
-        "scroll-step": 1
-    },
-    "pulseaudio/slider": {
-        "min": 0,
-        "max": 100,
-        "rotate": 0,
-        "device": "pulseaudio",
-        "scroll-step": 1
     },
     "mpris": {
         "format": "  {dynamic}",
