@@ -28,3 +28,11 @@ obsidian/
 user-dirs.dirs
 user-dirs.locale
 Electron/
+Cursor/
+JetBrains/
+QtProject.conf
+bleachbit/
+fish/
+kconf_updaterc
+kde.org/
+session/
