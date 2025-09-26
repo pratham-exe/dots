@@ -54,7 +54,7 @@ window#waybar.hidden {
 }
 
 #workspaces button:hover {
-  background: #6E6E6E;
+  background: #6e6e6e;
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -72,6 +72,7 @@ window#waybar.hidden {
 
 #pulseaudio,
 #backlight,
+#idle_inhibitor,
 #battery {
   margin: 6px 3px;
   color: #999999;
@@ -145,4 +146,12 @@ tooltip label {
   margin-top: 5px;
   padding: 1px 10px;
   color: #999999;
+}
+
+#idle_inhibitor {
+  padding-right: 7px;
+}
+
+#backlight {
+  padding-right: 1px;
 }

@@ -7,6 +7,8 @@
     "margin-right": 7,
     "modules-left": [
         "group/connections",
+        "idle_inhibitor",
+        "backlight",
         "clock"
     ],
     "group/connections": {
@@ -26,7 +28,6 @@
     "modules-right": [
         "mpris",
         "pulseaudio",
-        "backlight",
         "battery",
         "group/powerbutton"
     ],
@@ -85,7 +86,7 @@
         "format-bluetooth": "{icon} {volume}%",
         "nospacing": 1,
         "tooltip": false,
-        "format-muted": "󰝟 {volume}%",
+        "format-muted": " {volume}%",
         "format-icons": {
             "headphone": "",
             "headset": "",
@@ -132,5 +133,12 @@
         "dynamic-separator": " | ",
         "dynamic-order": ["title", "artist"],
         "ignored-players": ["firefox"]
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
     }
 }
